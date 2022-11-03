@@ -1,26 +1,17 @@
-# inotifywait-for-Android
-## 0x01 编译
-```
-git clone https://github.com/dstmath/inotifywait-for-Android.git  
-cd inotifywait-for-Android
-$NDKPATH/ndk-build
+# inotify-tools-for-Android
 
-Android NDK: APP_PLATFORM not set. Defaulting to minimum supported version android-19.    
-[arm64-v8a] Compile        : inotifywait <= wrap_inotifywait.c
-[arm64-v8a] Compile        : inotifywait <= common.c
-[arm64-v8a] Compile        : inotifywait <= inotifytools.c
-[arm64-v8a] Compile        : inotifywait <= redblack.c
-[arm64-v8a] Executable     : inotifywait
-[arm64-v8a] Install        : inotifywait => libs/arm64-v8a/inotifywait
-[arm64-v8a] Compile        : inotifywatch <= wrap_inotifywatch.c
-[arm64-v8a] Compile        : inotifywatch <= common.c
-[arm64-v8a] Compile        : inotifywatch <= inotifytools.c
-[arm64-v8a] Compile        : inotifywatch <= redblack.c
-[arm64-v8a] Executable     : inotifywatch
-[arm64-v8a] Install        : inotifywatch => libs/arm64-v8a/inotifywatch
+提供给Android使用的inotifywait和inotifywatch
+
+## 0x01 编译
+
+```bash
+git clone https://github.com/xxr0ss/inotify-tools-for-Android
+cd inotifywait-for-Android
+YOUR_NDK_PATH/ndk-build
 ```
 ## 0x02 push inotifywatch和inofitywait到手机
-```
+
+```bash
 adb push inotifywatch /data/local/tmp/
 adb push inotifywait /data/local/tmp/
 adb shell
