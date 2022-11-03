@@ -12,7 +12,7 @@
 #include <errno.h>
 #include <fcntl.h>
 #include <getopt.h>
-#include "regex/regex.h"
+#include <regex.h>
 #include <signal.h>
 #include <stdbool.h>
 #include <stdio.h>

@@ -11,7 +11,7 @@
 #include <fcntl.h>
 #include <getopt.h>
 #include <limits.h>
-#include "regex/regex.h"
+#include <regex.h>
 #include <signal.h>
 #include <stdarg.h>
 #include <stdbool.h>

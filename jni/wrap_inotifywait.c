@@ -4,6 +4,6 @@ typedef unsigned char bool;
 #define true (!false)
 #define MAX(a, b) ((a < b) ? (b) : (a))
 
-#include "regex/regex.c"
+// #include "regex/regex.c"
 
 #include "inotifywait.c"

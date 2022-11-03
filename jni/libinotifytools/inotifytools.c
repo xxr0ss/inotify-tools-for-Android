@@ -29,7 +29,7 @@
 #include <unistd.h>
 #include <dirent.h>
 #include <time.h>
-#include "../regex/regex.h"
+#include <regex.h>
 #include <setjmp.h>
 
 #include "inotifytools/inotify.h"
