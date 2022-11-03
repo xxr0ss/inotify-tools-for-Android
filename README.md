@@ -1,33 +1,17 @@
-# inotifywait-for-Android
-## 0x01 编译
-```
-git clone https://github.com/dstmath/inotifywait-for-Android.git  
-cd inotifywait-for-Android
-ndk-build
+# inotify-tools-for-Android
 
-[armeabi] Compile thumb  : inotifywait <= wrap_inotifywait.c
-[armeabi] Compile thumb  : inotifywait <= common.c
-[armeabi] Compile thumb  : inotifywait <= inotifytools.c
-In file included from jni/libinotifytools/inotifytools.c:31:0:
-jni/libinotifytools/../regex/regex.h:367:40: warning: declaration does not declare anything
-   unsigned long int __REPB_PREFIX(used);
-                                        ^
-[armeabi] Compile thumb  : inotifywait <= redblack.c
-[armeabi] Executable     : inotifywait
-[armeabi] Install        : inotifywait => libs/armeabi/inotifywait
-[armeabi] Compile thumb  : inotifywatch <= wrap_inotifywatch.c
-[armeabi] Compile thumb  : inotifywatch <= common.c
-[armeabi] Compile thumb  : inotifywatch <= inotifytools.c
-In file included from jni/libinotifytools/inotifytools.c:31:0:
-jni/libinotifytools/../regex/regex.h:367:40: warning: declaration does not declare anything
-   unsigned long int __REPB_PREFIX(used);
-                                        ^
-[armeabi] Compile thumb  : inotifywatch <= redblack.c
-[armeabi] Executable     : inotifywatch
-[armeabi] Install        : inotifywatch => libs/armeabi/inotifywatch
+提供给Android使用的inotifywait和inotifywatch
+
+## 0x01 编译
+
+```bash
+git clone https://github.com/xxr0ss/inotify-tools-for-Android
+cd inotifywait-for-Android
+YOUR_NDK_PATH/ndk-build
 ```
 ## 0x02 push inotifywatch和inofitywait到手机
-```
+
+```bash
 adb push inotifywatch /data/local/tmp/
 adb push inotifywait /data/local/tmp/
 adb shell
