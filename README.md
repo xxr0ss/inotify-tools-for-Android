@@ -3,28 +3,21 @@
 ```
 git clone https://github.com/dstmath/inotifywait-for-Android.git  
 cd inotifywait-for-Android
-ndk-build
+$NDKPATH/ndk-build
 
-[armeabi] Compile thumb  : inotifywait <= wrap_inotifywait.c
-[armeabi] Compile thumb  : inotifywait <= common.c
-[armeabi] Compile thumb  : inotifywait <= inotifytools.c
-In file included from jni/libinotifytools/inotifytools.c:31:0:
-jni/libinotifytools/../regex/regex.h:367:40: warning: declaration does not declare anything
-   unsigned long int __REPB_PREFIX(used);
-                                        ^
-[armeabi] Compile thumb  : inotifywait <= redblack.c
-[armeabi] Executable     : inotifywait
-[armeabi] Install        : inotifywait => libs/armeabi/inotifywait
-[armeabi] Compile thumb  : inotifywatch <= wrap_inotifywatch.c
-[armeabi] Compile thumb  : inotifywatch <= common.c
-[armeabi] Compile thumb  : inotifywatch <= inotifytools.c
-In file included from jni/libinotifytools/inotifytools.c:31:0:
-jni/libinotifytools/../regex/regex.h:367:40: warning: declaration does not declare anything
-   unsigned long int __REPB_PREFIX(used);
-                                        ^
-[armeabi] Compile thumb  : inotifywatch <= redblack.c
-[armeabi] Executable     : inotifywatch
-[armeabi] Install        : inotifywatch => libs/armeabi/inotifywatch
+Android NDK: APP_PLATFORM not set. Defaulting to minimum supported version android-19.    
+[arm64-v8a] Compile        : inotifywait <= wrap_inotifywait.c
+[arm64-v8a] Compile        : inotifywait <= common.c
+[arm64-v8a] Compile        : inotifywait <= inotifytools.c
+[arm64-v8a] Compile        : inotifywait <= redblack.c
+[arm64-v8a] Executable     : inotifywait
+[arm64-v8a] Install        : inotifywait => libs/arm64-v8a/inotifywait
+[arm64-v8a] Compile        : inotifywatch <= wrap_inotifywatch.c
+[arm64-v8a] Compile        : inotifywatch <= common.c
+[arm64-v8a] Compile        : inotifywatch <= inotifytools.c
+[arm64-v8a] Compile        : inotifywatch <= redblack.c
+[arm64-v8a] Executable     : inotifywatch
+[arm64-v8a] Install        : inotifywatch => libs/arm64-v8a/inotifywatch
 ```
 ## 0x02 push inotifywatch和inofitywait到手机
 ```
